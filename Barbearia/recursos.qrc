@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>icones/cliente.png</file>
+        <file>icones/acento.png</file>
+        <file>icones/barbeiro.png</file>
+        <file>icones/maquina.png</file>
+        <file>icones/help.png</file>
+        <file>icones/Atualizar.png</file>
+        <file>icones/Barbearia.png</file>
+    </qresource>
+</RCC>

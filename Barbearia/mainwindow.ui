@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>692</width>
+    <height>419</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Barber Shop Management</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="recursos.qrc">
+    <normaloff>:/img/icones/Barbearia.png</normaloff>:/img/icones/Barbearia.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>800</width>
+     <height>511</height>
+    </size>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_14">
+       <attribute name="title">
+        <string>Agenda</string>
+       </attribute>
+       <widget class="QTableWidget" name="tbwServicos">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>621</width>
+          <height>361</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>692</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuClientes">
+    <property name="title">
+     <string>Clientes</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="adicionarCliente"/>
+    <addaction name="buscarCliente"/>
+   </widget>
+   <widget class="QMenu" name="menuFuncion_rios">
+    <property name="title">
+     <string>Funcionários</string>
+    </property>
+    <addaction name="novoFuncionario"/>
+    <addaction name="excluirFuncionario"/>
+   </widget>
+   <widget class="QMenu" name="menuServi_os">
+    <property name="title">
+     <string>Serviços</string>
+    </property>
+    <addaction name="adicionarServico"/>
+   </widget>
+   <widget class="QMenu" name="menuConfigura_es">
+    <property name="title">
+     <string>Configurações</string>
+    </property>
+    <addaction name="actionAtualizar"/>
+    <addaction name="actionAjuda"/>
+   </widget>
+   <addaction name="menuClientes"/>
+   <addaction name="menuFuncion_rios"/>
+   <addaction name="menuServi_os"/>
+   <addaction name="menuConfigura_es"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="adicionarCliente"/>
+   <addaction name="separator"/>
+   <addaction name="novoFuncionario"/>
+   <addaction name="separator"/>
+   <addaction name="adicionarServico"/>
+   <addaction name="separator"/>
+   <addaction name="actionAjuda"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="adicionarCliente">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/img/icones/cliente.png</normaloff>:/img/icones/cliente.png</iconset>
+   </property>
+   <property name="text">
+    <string>Adicionar</string>
+   </property>
+   <property name="toolTip">
+    <string>Adicionar novo cliente</string>
+   </property>
+  </action>
+  <action name="buscarCliente">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/img/icones/cliente.png</normaloff>:/img/icones/cliente.png</iconset>
+   </property>
+   <property name="text">
+    <string>Buscar</string>
+   </property>
+   <property name="toolTip">
+    <string>Buscar por um cliente</string>
+   </property>
+  </action>
+  <action name="novoFuncionario">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/img/icones/barbeiro.png</normaloff>:/img/icones/barbeiro.png</iconset>
+   </property>
+   <property name="text">
+    <string>Novo</string>
+   </property>
+   <property name="toolTip">
+    <string>Adicionar um novo funcionário</string>
+   </property>
+  </action>
+  <action name="excluirFuncionario">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/img/icones/barbeiro.png</normaloff>:/img/icones/barbeiro.png</iconset>
+   </property>
+   <property name="text">
+    <string>Editar</string>
+   </property>
+   <property name="toolTip">
+    <string>Deletar um funcionário</string>
+   </property>
+  </action>
+  <action name="adicionarServico">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/img/icones/maquina.png</normaloff>:/img/icones/maquina.png</iconset>
+   </property>
+   <property name="text">
+    <string>Agendar</string>
+   </property>
+   <property name="toolTip">
+    <string>Agendar serviço</string>
+   </property>
+  </action>
+  <action name="listarServicos">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/img/icones/maquina.png</normaloff>:/img/icones/maquina.png</iconset>
+   </property>
+   <property name="text">
+    <string>Listar</string>
+   </property>
+   <property name="toolTip">
+    <string>Listar todos serviços</string>
+   </property>
+  </action>
+  <action name="actionAtualizar">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/img/icones/Atualizar.png</normaloff>:/img/icones/Atualizar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Atualizar agenda</string>
+   </property>
+  </action>
+  <action name="actionAjuda">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/img/icones/help.png</normaloff>:/img/icones/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ajuda</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
